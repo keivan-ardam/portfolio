@@ -4,7 +4,6 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12"></div>
         <div class="header-wrapper">
           <h1>
             SRE &amp;<br />
@@ -187,19 +186,7 @@ export default {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-@media (min-width: 992px) {
-  .col-lg-12 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
 
-@media (min-width: 768px) {
-  .col-md-12 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
 .header-wrapper {
   transform: translate(-50%, -50%);
   position: absolute;
@@ -223,6 +210,12 @@ export default {
   letter-spacing: 4pt;
   color: #9e9e9e;
   text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+  .header-wrapper h1 {
+    font-size: 18pt; /* Smaller font size for medium and small screens */
+  }
 }
 
 .more-info {

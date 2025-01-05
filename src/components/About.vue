@@ -144,6 +144,12 @@ a i {
   color: rgb(205, 205, 205);
 }
 
+@media (max-width: 880px) {
+  .main-text {
+    padding: 150px 5px;
+  }
+}
+
 @media (min-width: 992px) {
   .col-lg-6 {
     flex: 0 0 auto;

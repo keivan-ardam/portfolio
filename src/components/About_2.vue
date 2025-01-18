@@ -4,7 +4,7 @@
       <div class="first-side col-lg-6 col-lg-12">
         <video
           id="video_widget_90950318458"
-          :src="'https://20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/Web%20Assets/Video/loop-preview.mp4'"
+          src="/loop-preview.mp4"
           :loop="true"
           :muted="true"
           :playsinline="true"

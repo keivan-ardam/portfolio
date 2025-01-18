@@ -4,7 +4,7 @@
       <div class="first-side col-lg-6 col-lg-12">
         <video
           id="video_widget_90950318458"
-          src="/loop-preview.mp4"
+          :src="`${publicPath}loop-preview.mp4`"
           :loop="true"
           :muted="true"
           :playsinline="true"
@@ -92,6 +92,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
   mounted() {
     // Access the video element using the ref
     const videoElement = this.$refs.videoElement;
